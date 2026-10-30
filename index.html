@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kopi September — Nikmati Setiap Tegukan</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            purpleClassic: {
+              50: '#faf7ff',
+              100: '#f1e8ff',
+              200: '#dfc9ff',
+              300: '#c49cff',
+              400: '#a970ff',
+              500: '#8b5cf6',
+              600: '#7138c8',
+              700: '#5b2ca0',
+              800: '#47227d',
+              900: '#301653'
+            }
+          },
+          fontFamily: {
+            serif: ['Georgia', 'Cambria', 'Times New Roman', 'serif'],
+            sans: ['Arial', 'Helvetica', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .font-classic {
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .hero-pattern {
+      background-image:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.08) 0 2px, transparent 2px),
+        radial-gradient(circle at 80% 70%, rgba(255,255,255,0.06) 0 2px, transparent 2px);
+      background-size: 45px 45px;
+    }
+  </style>
+</head>
+
+<body class="bg-purpleClassic-50 text-purpleClassic-900">
+
+  <!-- =========================
+       NAVBAR
+  ========================== -->
+  <header class="bg-white border-b border-purpleClassic-100">
+    <nav class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="h-20 flex items-center justify-between">
+
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-full bg-purpleClassic-700 text-white
+                      flex items-center justify-center shadow-md">
+            <span class="font-classic text-2xl font-bold">K</span>
+          </div>
+
+          <div>
+            <h1 class="font-classic text-2xl font-bold text-purpleClassic-800">
+              Kopi September
+            </h1>
+            <p class="text-[10px] tracking-[0.25em] uppercase text-purpleClassic-500">
+              Since 1998
+            </p>
+          </div>
+        </a>
+
+        <!-- Menu -->
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="#beranda"
+             class="text-purpleClassic-700 hover:text-purpleClassic-500 transition">
+            Beranda
+          </a>
+
+          <a href="#tentang"
+             class="text-purpleClassic-700 hover:text-purpleClassic-500 transition">
+            Tentang
+          </a>
+
+          <a href="#produk"
+             class="text-purpleClassic-700 hover:text-purpleClassic-500 transition">
+            Produk
+          </a>
+
+          <a href="#kontak"
+             class="text-purpleClassic-700 hover:text-purpleClassic-500 transition">
+            Kontak
+          </a>
+        </div>
+
+        <!-- Login -->
+        <a href="#login"
+           class="hidden sm:inline-flex items-center justify-center
+                  px-5 py-2.5 rounded-md
+                  border border-purpleClassic-700
+                  text-purpleClassic-700 text-sm font-semibold
+                  hover:bg-purpleClassic-700 hover:text-white
+                  transition duration-300">
+          Login
+        </a>
+
+        <!-- Mobile Button -->
+        <button class="md:hidden text-purpleClassic-800 text-2xl">
+          ☰
+        </button>
+
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- =========================
+       HERO SECTION
+  ========================== -->
+  <main id="beranda">
+
+    <section class="relative overflow-hidden bg-purpleClassic-800 hero-pattern">
+
+      <!-- Decorative Circle -->
+      <div class="absolute -top-32 -right-32 w-96 h-96
+                  rounded-full border border-purpleClassic-400/20"></div>
+
+      <div class="absolute -bottom-48 -left-32 w-[500px] h-[500px]
+                  rounded-full border border-purpleClassic-400/20"></div>
+
+      <div class="relative max-w-7xl mx-auto px-6 lg:px-8
+                  py-24 lg:py-32">
+
+        <div class="max-w-4xl mx-auto text-center">
+
+          <!-- Small Label -->
+          <div class="inline-flex items-center gap-3 mb-7">
+            <span class="w-10 h-px bg-purpleClassic-300"></span>
+
+            <span class="text-purpleClassic-200 text-xs
+                         uppercase tracking-[0.35em] font-medium">
+              Kopi Pilihan Terbaik
+            </span>
+
+            <span class="w-10 h-px bg-purpleClassic-300"></span>
+          </div>
+
+          <!-- Heading -->
+          <h2 class="font-classic text-6xl sm:text-7xl lg:text-8xl
+                     font-bold leading-[0.9] text-white">
+            Secangkir Kopi,
+            <span class="block text-purpleClassic-300 italic">
+              Sejuta Cerita.
+            </span>
+          </h2>
+
+          <!-- Description -->
+          <p class="mt-8 max-w-2xl mx-auto
+                    text-purpleClassic-100
+                    text-base sm:text-lg leading-8">
+            Rasakan kenikmatan kopi pilihan yang diproses dengan penuh
+            ketelitian. Kopi September menghadirkan cita rasa klasik
+            untuk menemani setiap momen berharga Anda.
+          </p>
+
+          <!-- CTA -->
+          <div class="mt-10 flex flex-col sm:flex-row
+                      justify-center gap-4">
+
+            <a href="#produk"
+               class="inline-flex items-center justify-center
+                      px-8 py-4 rounded-md
+                      bg-white text-purpleClassic-800
+                      font-semibold text-sm
+                      shadow-lg
+                      hover:bg-purpleClassic-100
+                      transition duration-300">
+              Jelajahi Produk
+            </a>
+
+            <a href="#tentang"
+               class="inline-flex items-center justify-center
+                      px-8 py-4 rounded-md
+                      border border-purpleClassic-300
+                      text-white
+                      font-semibold text-sm
+                      hover:bg-purpleClassic-700
+                      transition duration-300">
+              Tentang Kami
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+         ABOUT / FEATURE
+    ========================== -->
+    <section id="tentang" class="bg-white py-20">
+
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+
+          <!-- Feature 1 -->
+          <div class="p-8 border border-purpleClassic-100
+                      rounded-lg hover:shadow-lg transition">
+
+            <div class="w-14 h-14 mx-auto mb-5
+                        rounded-full bg-purpleClassic-100
+                        flex items-center justify-center">
+              <span class="text-2xl">☕</span>
+            </div>
+
+            <h3 class="font-classic text-2xl font-bold
+                       text-purpleClassic-800">
+              Biji Pilihan
+            </h3>
+
+            <p class="mt-3 text-sm leading-7 text-gray-600">
+              Menggunakan biji kopi berkualitas yang dipilih
+              secara teliti dari perkebunan terbaik.
+            </p>
+
+          </div>
+
+
+          <!-- Feature 2 -->
+          <div class="p-8 border border-purpleClassic-100
+                      rounded-lg hover:shadow-lg transition">
+
+            <div class="w-14 h-14 mx-auto mb-5
+                        rounded-full bg-purpleClassic-100
+                        flex items-center justify-center">
+              <span class="text-2xl">✦</span>
+            </div>
+
+            <h3 class="font-classic text-2xl font-bold
+                       text-purpleClassic-800">
+              Rasa Klasik
+            </h3>
+
+            <p class="mt-3 text-sm leading-7 text-gray-600">
+              Karakter rasa yang seimbang dengan aroma khas
+              untuk pengalaman kopi yang berkesan.
+            </p>
+
+          </div>
+
+
+          <!-- Feature 3 -->
+          <div class="p-8 border border-purpleClassic-100
+                      rounded-lg hover:shadow-lg transition">
+
+            <div class="w-14 h-14 mx-auto mb-5
+                        rounded-full bg-purpleClassic-100
+                        flex items-center justify-center">
+              <span class="text-2xl">♡</span>
+            </div>
+
+            <h3 class="font-classic text-2xl font-bold
+                       text-purpleClassic-800">
+              Dibuat Sepenuh Hati
+            </h3>
+
+            <p class="mt-3 text-sm leading-7 text-gray-600">
+              Setiap proses dibuat dengan perhatian agar
+              setiap tegukan terasa istimewa.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+         PRODUCT CTA
+    ========================== -->
+    <section id="produk"
+             class="bg-purpleClassic-100 py-20">
+
+      <div class="max-w-4xl mx-auto px-6 text-center">
+
+        <p class="text-xs uppercase tracking-[0.3em]
+                  text-purpleClassic-600 font-semibold">
+          Temukan Favoritmu
+        </p>
+
+        <h2 class="mt-3 font-classic text-5xl font-bold
+                   text-purpleClassic-900">
+          Waktu terbaik untuk menikmati kopi
+        </h2>
+
+        <p class="mt-5 text-gray-600 leading-7">
+          Mulai hari Anda dengan aroma kopi yang hangat,
+          rasa yang kaya, dan cerita yang baru.
+        </p>
+
+        <a href="#"
+           class="mt-8 inline-flex px-8 py-4
+                  bg-purpleClassic-700 text-white
+                  rounded-md font-semibold
+                  hover:bg-purpleClassic-800
+                  transition duration-300">
+          Pesan Sekarang
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer id="kontak"
+          class="bg-purpleClassic-900 text-purpleClassic-100">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-12">
+
+      <div class="flex flex-col md:flex-row
+                  items-center justify-between gap-6">
+
+        <!-- Brand -->
+        <div class="text-center md:text-left">
+
+          <h2 class="font-classic text-3xl font-bold text-white">
+            Kopi September
+          </h2>
+
+          <p class="mt-2 text-sm text-purpleClassic-300">
+            Kopi klasik untuk cerita yang tak terlupakan.
+          </p>
+
+        </div>
+
+        <!-- Links -->
+        <div class="flex gap-6 text-sm">
+          <a href="#" class="hover:text-white transition">
+            Instagram
+          </a>
+
+          <a href="#" class="hover:text-white transition">
+            Facebook
+          </a>
+
+          <a href="#" class="hover:text-white transition">
+            Kontak
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="mt-10 pt-6 border-t border-purpleClassic-700
+                  text-center text-xs text-purpleClassic-400">
+
+        © 2026 Kopi September. Semua hak dilindungi.
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
